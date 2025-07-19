@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -269,10 +268,10 @@ export const Community = () => {
                   </div>
                   {user && (
                     <Button asChild size="sm">
-                      <Link to="/add-activity">
+                      <a href="/add-activity">
                         <Plus className="w-4 h-4 mr-2" />
                         Add Activity
-                      </Link>
+                      </a>
                     </Button>
                   )}
                 </div>
@@ -307,10 +306,10 @@ export const Community = () => {
                       <p className="text-muted-foreground mb-4">No activities shared yet</p>
                       {user && (
                         <Button asChild size="sm">
-                          <Link to="/add-activity">
+                          <a href="/add-activity">
                             <Plus className="w-4 h-4 mr-2" />
                             Add Your First Activity
-                          </Link>
+                          </a>
                         </Button>
                       )}
                     </div>
@@ -371,7 +370,7 @@ export const Community = () => {
                 </CardHeader>
                 <CardContent>
                   <Button asChild className="w-full">
-                    <Link to="/auth">Join Now</Link>
+                    <a href="/auth">Join Now</a>
                   </Button>
                 </CardContent>
               </Card>
